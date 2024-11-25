@@ -1,0 +1,40 @@
+/* src/app/globals.scss */
+
+:root {
+  --dark-color: #000000;
+  --secondary-color: #ffc107;
+  --light-blue-color: #91d3df;
+  --text-color: #ffffff;
+  --background-color: orange;
+  --padding: 20px;
+  --font-size-large: 1.5rem;
+  --font-size-normal: 1rem;
+  --font-size-mobile-heading: 21px;
+  --font-size-mobile-subheadings: 18px;
+  --font-size-mobile-secondary-text: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background-color: orange;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}

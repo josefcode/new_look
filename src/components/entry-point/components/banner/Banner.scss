@@ -1,0 +1,22 @@
+.banner-container {
+  background-color: var(--light-blue-color);
+  height: 400px;
+  display: grid;
+
+  .banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 570px 570px;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 1.115em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    // width: 570px;
+  }
+}

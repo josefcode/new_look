@@ -1,0 +1,43 @@
+.header-container {
+  padding-block: 1rem;
+  background-color: var(--dark-color);
+  color: var(--text-color);
+
+  .header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+
+    li {
+      list-style: none;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-inline: 1rem;
+    .header-wrapper {
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: var(--font-size-mobile-heading);
+    }
+
+    li {
+      font-size: var(--font-size-mobile-subheadings);
+    }
+  }
+}
